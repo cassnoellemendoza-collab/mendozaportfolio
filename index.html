@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    /* Navigation */
+    header {
+      background: #f901d8;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem 2rem;
+    }
+    nav h1 {
+      font-size: 1.5rem;
+      color: #2c262b;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #d169be;
+    }
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #f468e2, #00b4d8);
+      color: #fff;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    /* Sections */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #bc49b4;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .skill-card {
+      background: #e088dd;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      color: #0077b6;
+    }
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background: #dd92cd;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h3 {
+      color: #ce49c3;
+    }
+    /* Contact Form */
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #bd4fb2;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #d73ce5;
+      color: #d9aaca;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #b515a3;
+    }
+    /* Footer */
+    footer {
+      background: #c61dbb;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Cassandra Noelle R. Mendoza</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>This portfolio contains my MS101 activities and exercises. It shows what I have 
+learned in class and how I understand the subject. This portfolio also reflects my effort, progress, and learning throughout the course.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML & CSS</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Problem Solving</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3><a href="LAB1.html" target="_blank">TASK 1</a></h3>
+        <p>RESUME</p>
+      </div>
+      <div class="project">
+        <h3><a href="LAB2.html" target="_blank">TASK 2</a></h3>
+        <p>UNORDERED AND ORDERED LIST</p>
+      </div>
+      <div class="project">
+        <h3><a href="LAB3.html" target="_blank">TASK 3</a></h3>
+        <p>HTML FORM</p>
+      </div>
+      <div class="project">
+        <h3><a href="LAB4.html" target="_blank">TASK 4</a></h3>
+        <p>IMAGE MAP</p>
+      </div>
+      <div class="project">
+        <h3><a href="LAB5.html" target="_blank">TASK 5</a></h3>
+        <p>RESUME WITH CSS</p>
+      </div>
+      <div class="project">
+        <h3><a href="LAB6.html" target="_blank">TASK 6</a></h3>
+        <p>GOOGLE FORM</p>
+      </div>
+     <div class="project">
+        <h3><a href="LAB7.html" target="_blank">TASK 7</a></h3>
+        <p>SEMANTIC
+        </p> 
+      </div>
+      <div class="project">
+        <h3><a href="LAB8.html" target="_blank">TASK 8</a></h3>
+        <p>STYLESHEET
+        </p> 
+    </div>
+    </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <form>
+        <input type="text" name="name" placeholder="Cassandra Noelle R. Mendoza" required>
+        <input type="email" name="email" placeholder="cassnoellemendoza@gmail.com" required>
+        <textarea name="message" rows="4" placeholder="Thank you for visit" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Cassandra Portfolio</p>
+  </footer>
+</body>
+</html>
